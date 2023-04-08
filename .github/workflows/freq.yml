@@ -10,7 +10,8 @@ env:
   DB: ${{ secrets.DB }}
   CAPATH: ${{ secrets.CAPATH }}
 jobs:
-  freq: runs-on: ubuntu-latest 
+  freq:
+    runs-on: ubuntu-latest 
     steps:
       - uses: actions/checkout@v3
       - run: pip install mysql
