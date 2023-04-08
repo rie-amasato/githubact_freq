@@ -21,7 +21,7 @@ sql="SELECT COUNT(*) FROM freqdata"
 cursor.execute(sql)
 id=cursor.fetchone()[0]+1
 
-sql="INSERT INTO usddata VALUES(%s, %s)"
+sql="INSERT INTO freqdata VALUES(%s, %s)"
 
 time=datetime.datetime.now().strftime('%m%d%H%M')
 cursor.execute(sql, (id, time))
